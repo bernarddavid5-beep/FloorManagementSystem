@@ -1636,5 +1636,37 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("svg .seat").forEach((seat) => {
+          // Prevent duplicate text
+          if (seat.querySelector("text")) return;
+
+          const seatId = seat.getAttribute("data-seat");
+          if (!seatId) return;
+
+          const seatNo = seatId.split("-")[1];
+
+          const text = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "text",
+          );
+
+          text.setAttribute("x", "13");
+          text.setAttribute("y", "9"); // better vertical centering
+          text.setAttribute("text-anchor", "middle");
+          text.setAttribute("dominant-baseline", "middle");
+          text.setAttribute("font-size", "6");
+          text.setAttribute("font-weight", "300");
+          text.setAttribute("fill", "#000");
+          text.setAttribute("pointer-events", "none");
+
+          text.textContent = seatNo;
+
+          seat.appendChild(text);
+        });
+      });
+    </script>
   </body>
 </html>
+
