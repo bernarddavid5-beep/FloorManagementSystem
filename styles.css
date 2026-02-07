@@ -1,0 +1,207 @@
+ body {
+     font-family: Arial, sans-serif;
+     /* background-color: brown; */
+ }
+
+ .seat {
+     fill: #e5e7eb;
+     stroke: #374151;
+     rx: 6;
+     cursor: pointer;
+
+     pointer-events: all;
+ }
+ .seat rect {
+     fill: #f3f4f6;
+     stroke: #111;
+     cursor: pointer;
+ }
+
+ .seat:hover rect {
+     fill: #60a5fa;
+ }
+
+ .seat.occupied {
+     fill: #22c55e;
+ }
+
+ .seat:hover {
+     fill: #3b82f6;
+ }
+.seat.regular rect {
+    fill: #22c55e; /* green */
+}
+.seat.shared rect{
+  fill:rgb(246, 191, 125)
+}
+
+.seat:hover rect {
+  fill:#60a5fa;
+    stroke: #000;
+    stroke-width: 1.5;
+}
+
+
+ .tooltip {
+     position: absolute;
+     background: #111827;
+     color: white;
+     padding: 8px 12px;
+     border-radius: 6px;
+     font-size: 12px;
+     display: none;
+     pointer-events: none;
+
+ }
+ #tooltip hr {
+    border: 0;
+    border-top: 1px solid #374151;
+}
+
+ svg {
+     background-image: url("floorPlan.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+ .details-panel {
+  width: 97%;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.details-panel h3 {
+  margin-bottom: 10px;
+}
+
+#seatTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Wrapper (optional but recommended) */
+#seatTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Header */
+#seatTable thead {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+}
+
+#seatTable thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Body cells */
+#seatTable tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+/* Zebra rows */
+#seatTable tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+/* Hover effect */
+#seatTable tbody tr:hover {
+    background: #eef2ff;
+    cursor: pointer;
+}
+
+/* First column highlight (Seat No) */
+#seatTable tbody td:first-child {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Shift badge */
+#seatTable td:last-child {
+    font-weight: 600;
+}
+
+/* Fixed / Shared coloring */
+tr.fixed td:first-child {
+    color: #15803d;
+}
+
+tr.shared td:first-child {
+    color: #1d4ed8;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+    #seatTable {
+        font-size: 13px;
+    }
+
+    #seatTable thead {
+        display: none;
+    }
+
+    #seatTable tbody tr {
+        display: block;
+        margin-bottom: 12px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    #seatTable tbody td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        padding: 6px 8px;
+    }
+
+    #seatTable tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #6b7280;
+    }
+}
+
+.top-bar {
+  width: 90%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.right-actions button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.right-actions button:hover {
+  background: #125aa0;
+}

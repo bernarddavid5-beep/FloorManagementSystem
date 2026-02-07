@@ -1,0 +1,1640 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="right-actions">
+        <input type="file" id="excelUpload" accept=".xlsx,.xls" hidden />
+
+        <button id="uploadBtn">⬆ Upload Excel</button>
+        <button id="exportBtn">⬇ Export</button>
+      </div>
+    </div>
+
+    <svg
+      viewBox="0 0 1500 800"
+      width="100%"
+      height="auto"
+      preserveAspectRatio="xMidYMid meet">
+      <!-- Background -->
+      <image href="floorPlan.png" x="0" y="0" width="1500" height="800" />
+
+      <!-- first cluster -->
+      <g
+        class="seat desktop-rigth-side"
+        data-seat="6F-214"
+        transform="translate(230,110)
+     translate(13,9)
+     rotate(-60)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-213"
+        transform="translate(275,40)
+     translate(13,9)
+     rotate(-40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-212"
+        transform="translate(375,35)
+     translate(13,9)
+     rotate(20)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- first cluster -->
+
+      <!--  second cluster -->
+      <g
+        class="seat"
+        data-seat="6F-215"
+        transform="translate(453,165)
+     translate(13,9)
+     rotate(85)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-216"
+        transform="translate(485,140)
+     translate(13,9)
+     rotate(-139)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-221"
+        transform="translate(490,190)
+     translate(13,9)
+     rotate(-30)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-222"
+        transform="translate(440,275)
+     translate(13,9)
+     rotate(-80)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-217"
+        transform="translate(590,146)
+     translate(13,9)
+     rotate(160)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-220"
+        transform="translate(590,190)
+     translate(13,9)
+     rotate(35)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-219"
+        transform="translate(630,160)
+     translate(13,9)
+     rotate(-75)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-218"
+        transform="translate(675,81)
+     translate(13,9)
+     rotate(-35)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- second cluster -->
+
+      <!-- third cluster -->
+
+      <g
+        class="seat"
+        data-seat="6F-210"
+        transform="translate(925,80)
+     translate(13,9)
+     rotate(40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-211"
+        transform="translate(970,159)
+     translate(13,9)
+     rotate(75)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-209"
+        transform="translate(1000,140)
+     translate(13,9)
+     rotate(-139)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-204"
+        transform="translate(1008,187)
+     translate(13,9)
+     rotate(-30)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+      <g
+        class="seat"
+        data-seat="6F-203"
+        transform="translate(958,270)
+     translate(13,9)
+     rotate(-75)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-208"
+        transform="translate(1107,145)
+     translate(13,9)
+     rotate(150)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-205"
+        transform="translate(1110,190)
+     translate(13,9)
+     rotate(40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-206"
+        transform="translate(1145,170)
+     translate(13,9)
+     rotate(-90)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-207"
+        transform="translate(1192,82)
+     translate(13,9)
+     rotate(-40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- third cluster -->
+
+      <!-- fourth cluster -->
+
+      <g
+        class="seat"
+        data-seat="6F-228"
+        transform="translate(630,345)
+     translate(13,9)
+     rotate(210)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-223"
+        transform="translate(365,560)
+        translate(13,9)
+        rotate(130)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-227"
+        transform="translate(595,370)
+     translate(13,9)
+     rotate(90)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-229"
+        transform="translate(630,395)
+     translate(13,9)
+     rotate(-40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-226"
+        transform="translate(550,450)
+     translate(13,9)
+     rotate(130)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-225"
+        transform="translate(445,454)
+     translate(13,9)
+     rotate(-135)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-224"
+        transform="translate(409,475)
+     translate(13,9)
+     rotate(80)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-230"
+        transform="translate(585,462)
+     translate(13,9)
+     rotate(-58)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-231"
+        transform="translate(544,499)
+     translate(13,9)
+     rotate(30)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-232"
+        transform="translate(445,497)
+     translate(13,9)
+     rotate(-20)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-233"
+        transform="translate(395,581)
+     translate(13,9)
+     rotate(-65)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-234"
+        transform="translate(360,610)
+     translate(13,9)
+     rotate(50)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- fourth cluster -->
+
+      <!-- fifth cluster -->
+
+      <g
+        class="seat"
+        data-seat="6F-235"
+        transform="translate(490,705)
+     translate(13,9)
+     rotate(210)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-236"
+        transform="translate(595,700)
+     translate(13,9)
+     rotate(130)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-237"
+        transform="translate(640,622)
+     translate(13,9)
+     rotate(-260)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-238"
+        transform="translate(673,590)
+     translate(13,9)
+     rotate(210)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-239"
+        transform="translate(692,636)
+        translate(13,9)
+        rotate(0)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- fifth cluster -->
+
+      <!-- sixth cluster -->
+
+      <!-- <g
+        class="seat"
+        data-seat="6F-50"
+        transform="translate(879,560)
+     translate(13,9)
+     rotate(130)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g> -->
+
+      <g
+        class="seat"
+        data-seat="6F-192"
+        transform="translate(875,609)
+     translate(13,9)
+     rotate(40)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-193"
+        transform="translate(910,580)
+     translate(13,9)
+     rotate(-70)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-201"
+        transform="translate(965,456)
+     translate(13,9)
+     rotate(210)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-202"
+        transform="translate(925,475)
+     translate(13,9)
+     rotate(-260)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-200"
+        transform="translate(1061,455)
+     translate(13,9)
+     rotate(145)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-195"
+        transform="translate(1068,500)
+     translate(13,9)
+     rotate(45)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-196"
+        transform="translate(1100,471)
+     translate(13,9)
+     rotate(-70)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-199"
+        transform="translate(1110,365)
+     translate(13,9)
+     rotate(80)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-198"
+        transform="translate(1145,340)
+     translate(13,9)
+     rotate(210)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-197"
+        transform="translate(1140,395)
+     translate(13,9)
+     rotate(-50)
+     translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-194"
+        transform="translate(960,500)
+        translate(13,9)
+        rotate(-40)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- sixth cluster -->
+
+      <!-- seventh cluster -->
+      <g
+        class="seat"
+        data-seat="6F-191"
+        transform="translate(1010,700)
+        translate(13,9)
+        rotate(210)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-190"
+        transform="translate(1115,700)
+        translate(13,9)
+        rotate(130)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-189"
+        transform="translate(1160,618)
+        translate(13,9)
+        rotate(-260)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-188"
+        transform="translate(1200,595)
+        translate(13,9)
+        rotate(210)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <g
+        class="seat"
+        data-seat="6F-187"
+        transform="translate(1200,640)
+        translate(13,9)
+        rotate(-40)
+        translate(-13,-9)"
+        style="cursor: grab">
+        <rect
+          x="0"
+          y="0"
+          width="26"
+          height="18"
+          rx="3"
+          fill="#fff"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <line
+          x1="13"
+          y1="18"
+          x2="13"
+          y2="23"
+          stroke="#000"
+          stroke-width="1.5" />
+
+        <rect x="8" y="23" width="10" height="3" rx="1" fill="#000" />
+      </g>
+
+      <!-- seventh cluster -->
+    </svg>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <div class="details-panel">
+      <h3>All Employee Seating Details</h3>
+      <table id="seatTable">
+        <thead>
+          <tr>
+            <th>Seat No/Desk</th>
+            <th>Employee Name</th>
+            <th>Employee ID</th>
+            <th>Alliance</th>
+            <th>Desk Type</th>
+            <th>Segment</th>
+            <th>Platform</th>
+            <!-- <th>Shift</th> -->
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
