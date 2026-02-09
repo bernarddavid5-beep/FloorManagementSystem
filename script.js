@@ -258,6 +258,7 @@ function loadDefaultExcelFromServer(filePath) {
         });
 }
 document.addEventListener("DOMContentLoaded", () => {
-    loadDefaultExcelFromServer("SeatingPlan.xlsx");
+    loadDefaultExcelFromServer("Security.xlsx");
 
 });
+
